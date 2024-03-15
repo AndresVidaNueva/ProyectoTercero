@@ -180,17 +180,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('users.index') }}">
+                            <a class="nav-link" href="{{ route('generador.index') }}">
                                 <i class="bi-person me-2"></i>
-                                Usuarios
+                                Generar Ordenes
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('cursos.index') }}">
                                 <i class="bi-wallet me-2"></i>
-                                Cursos
-                            </a>
+                                Reporte de pagos
+                                                            </a>
                         </li>
 
                         <li class="nav-item">

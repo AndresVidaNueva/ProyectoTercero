@@ -44,7 +44,7 @@ Route::middleware('auth')->group(function () {
 
   Route::resource('cursos',CursosController::class);
   Route::resource('users',UsersController::class);
-
+  Route::get('/genera_ordenes',[GeneraOrdenesController::class,'index'])->name('genera_ordenes.index');
 
 });
 

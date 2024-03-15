@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CursosController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\GeneradorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::resource('cursos',CursosController::class);
-    Route::resource('users',UsersController::class);
+    Route::resource('generador',GeneradorController::class);
 
 
 });
