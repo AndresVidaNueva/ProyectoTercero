@@ -16,24 +16,23 @@ use App\Http\Controllers\GeneradorController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+return view('welcome');
 });
 
-// Route::get('/info', [TestController::class,'info'])->name('info');
-// Route::post('/info', [TestController::class,'store'])->name('info');
 
+
+Route::post('/generarOrdenes',[GeneradorController::class,'generarOrdenes'] )->name('generarOrdenes');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::resource('cursos',CursosController::class);
-    Route::resource('generador',GeneradorController::class);
+Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+Route::resource('cursos',CursosController::class);
+Route::resource('generador',GeneradorController::class);
 
 
 });

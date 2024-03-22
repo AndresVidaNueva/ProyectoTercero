@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Principal</title>
+        <title>PrincipalPE</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,9 +14,9 @@
     </head>
     <body class="antialiased">
         <div class="container text-center"> 
-       <h1>MIS CURSOS ONLINE</h1>
-      <a href="{{ route ('login')}}" class="btn btn-info btn sm">LOGIN</a>
-      <a href="{{ route ('register')}}" class="btn btn-info btn sm">REGISTER</a>
+       <h1>Pensiones Educativas</h1>
+      <a href="{{ route ('login')}}" class="btn btn-info btn sm">Login</a>
+      <a href="{{ route ('register')}}" class="btn btn-info btn sm">Register</a>
 
 </div>
     </body>

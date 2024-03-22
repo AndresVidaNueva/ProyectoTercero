@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Esta es la vista index de cursos</h1>
+    <h4>Esta es la vista index de cursos</h4>
     <a href="{{ route('cursos.create') }}" class="btn btn-info">Nuevo Curso</a>
 
     <table class="table">
